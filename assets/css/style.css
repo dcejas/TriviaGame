@@ -13,10 +13,11 @@
     position: absolute;
     height: 300px;
     width: 97%;
+/* TEMPORARILY HIDING THIS DIV. THIS WILL BE HIDDEN USING JS LATER */
+    display: none;
 }
 
 .btn {
-    /* margin-left: 43%; */
     margin-top: 100px;
     padding: 30px;
 }
