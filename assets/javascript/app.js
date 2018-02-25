@@ -9,7 +9,25 @@
         // Need to link each var to the divs in html
     // Create FORM
         // Limit to no more than 1 answer per question
+$(document).ready(function() {
+    console.log("ready test");
+});
+    var timeRemaining=30;
 
+    var counter=setInterval(timer, 1000); //1000 will run it every 1 second
+
+    function timer() {
+        timeRemaining=timeRemaining-1;
+        if (timeRemaining <=0) {
+            clearInterval(counter);
+            //counter ended, do something here
+            alert("Timer done!");
+        }
+    //Do code for showing the number of seconds here:
+    document.getElementById("timer").innerHTML=timeRemaining + " secs"; // watch for spelling
+
+    }
+    
 
 // 3rd page - RESULTS 
     // Calculate answers and show tallies at the end
