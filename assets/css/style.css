@@ -1,0 +1,19 @@
+.container {
+    background: lightblue;
+    position: relative;
+}
+
+#title {
+    color: blue;
+    font-size: xx-large;
+}
+
+#startButton {
+    background: red;
+    position: absolute;
+    height: 300px;
+    width: 97%;
+}
+
+#questionnaire {
+}
