@@ -21,10 +21,10 @@ $(document).ready(function() {
         if (timeRemaining <=0) {
             clearInterval(counter);
             //counter ended, do something here
-            alert("Timer done!");
+            // alert("Timer done!");
         }
     //Do code for showing the number of seconds here:
-    document.getElementById("timer").innerHTML=timeRemaining + " secs"; // watch for spelling
+    document.getElementById("timer").innerHTML=timeRemaining + " Seconds"; // watch for spelling
 
     }
     

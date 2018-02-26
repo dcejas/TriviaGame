@@ -1,11 +1,34 @@
+@font-face {
+    font-family: "avengeance";
+    src: url("font_avengeance/AVENGEANCE.otf");
+}
+@font-face {
+    font-family: "Avengeance Mightiest Avenger";
+    src: url("font_avengeance/AVENGEANCE MIGHTIEST AVENGER.otf");
+}
+
+body {
+    background-image: url("../images/avengers_background.jpg");
+    background-size: cover;
+}
+
 .container {
-    background: lightblue;
+    margin-top: 20px;
+    /* background: rgba(174, 54, 49, 0.7); */
+    /* opacity: .5; */
     position: relative;
+    /* background-image: url("../images/avengers_background.jpg");
+    background-size: contain; */
 }
 
 #title {
-    color: blue;
-    font-size: xx-large;
+    color: #E2CA48;
+    font-family: 'Avengeance', Arial, Helvetica, sans-serif; 
+}
+
+#headerTitle {
+    width: 100px;
+    height: 100px;
 }
 
 #startSplash {
@@ -20,4 +43,9 @@
 .btn {
     margin-top: 100px;
     padding: 30px;
+}
+
+#questionnaire {
+    background: rgba(174, 54, 49, 0.7);
+    margin-top: 20px;
 }
