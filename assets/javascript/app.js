@@ -31,25 +31,25 @@ var questions = [{
     answers: ["The Soulstone", "The Infinity Gem", "The Tesseract", "The Forever Cube"],
     correctAnswer: "The Tesseract"
     }, {
-    question: "3)	When Loki is locked up in the S.H.I.E.L.D. helicarrier, who gets him to reveal that he is planning to get Banner to change into the Hulk and destroy the ship fro within?",
-    answers: ["Thor", "Black Widow", "Iron Man", "Nick Fury"],
-    correctAnswer: "Black Widow"
+    question: "6)	When Iron Man is struck by Thor’s lightning what happens?",
+    answers: ["t is deflected and strikes Captain America", "Tony Stark’s chest piece gives out and he goes into cardiac arrest. ", "It super charges his armor up to 400%", "His suit shuts down and he is trapped in his own armor."],
+    correctAnswer: "It super charges his armor up to 400%"
     }, {
-    question: "3)	When Loki is locked up in the S.H.I.E.L.D. helicarrier, who gets him to reveal that he is planning to get Banner to change into the Hulk and destroy the ship fro within?",
-    answers: ["Thor", "Black Widow", "Iron Man", "Nick Fury"],
-    correctAnswer: "Black Widow"
+    question: "7)	When the Avengers are in the streets of New York Captain America starts issuing orders. What are his orders to the Hulk? ",
+    answers: ["Destroy the force field surrounding the machine that is keeping the hole open.", "Smash", "Turn back into Banner and help Tony reinitialize his armor.", "Throw a nuclear bomb into the rift in space."],
+    correctAnswer: "Smash"
     }, {
-    question: "3)	When Loki is locked up in the S.H.I.E.L.D. helicarrier, who gets him to reveal that he is planning to get Banner to change into the Hulk and destroy the ship fro within?",
-    answers: ["Thor", "Black Widow", "Iron Man", "Nick Fury"],
-    correctAnswer: "Black Widow"
+    question: "8)	When all of the Avengers are bickering in the lab on the S.H.I.E.L.D. helicarrier which Avenger is not present?",
+    answers: ["Captain America", "Black Widow", "Hawkeye", "Dr. Banner"],
+    correctAnswer: "Hawkeye"
     }, {
-    question: "3)	When Loki is locked up in the S.H.I.E.L.D. helicarrier, who gets him to reveal that he is planning to get Banner to change into the Hulk and destroy the ship fro within?",
-    answers: ["Thor", "Black Widow", "Iron Man", "Nick Fury"],
-    correctAnswer: "Black Widow"
+    question: "9)	When Tony Stark is threatening Loki and going through the Avengers roll call what is he doing?",
+    answers: ["Dialing 911 on his phone", "Making a drink", "Using an energy absorber to suck the energy out of Loki’s staff", "Setting Stark Tower to self destruct"],
+    correctAnswer: "Making a drink"
     }, {
-    question: "3)	When Loki is locked up in the S.H.I.E.L.D. helicarrier, who gets him to reveal that he is planning to get Banner to change into the Hulk and destroy the ship fro within?",
-    answers: ["Thor", "Black Widow", "Iron Man", "Nick Fury"],
-    correctAnswer: "Black Widow"
+    question: "10)	In one of the final scenes of the film, Pepper and Tony are standing on a section of Stark Tower that has been destroyed holding blueprints for something. As they are standing, the camera pans out so the audience can see more of Stark Tower and only one letter from STARK is left standing. Which letter is it?",
+    answers: ["A", "K", "S", "R"],
+    correctAnswer: "A"
   }];
 
 var game = {
@@ -90,8 +90,8 @@ var game = {
       } else {
         game.incorrect++;
       }
-
     });
+
     $.each($("input[name='question-1']:checked"), function(){
        if ($(this).val() == questions[1].correctAnswer) {
           game.correct++;
@@ -106,8 +106,59 @@ var game = {
       } else {
         game.incorrect++;
       }
-
     });
+
+    $.each($("input[name='question-3']:checked"), function(){
+      if ($(this).val() == questions[3].correctAnswer) {
+         game.correct++;
+     } else {
+       game.incorrect++;
+     }
+    });
+
+   $.each($("input[name='question-4']:checked"), function(){
+    if ($(this).val() == questions[4].correctAnswer) {
+       game.correct++;
+      } else {
+      game.incorrect++;
+      }
+    });
+  $.each($("input[name='question-5']:checked"), function(){
+    if ($(this).val() == questions[5].correctAnswer) {
+      game.correct++;
+    } else {
+      game.incorrect++;
+    }
+  });
+  $.each($("input[name='question-6']:checked"), function(){
+    if ($(this).val() == questions[6].correctAnswer) {
+      game.correct++;
+    } else {
+      game.incorrect++;
+    }
+  });
+  $.each($("input[name='question-7']:checked"), function(){
+    if ($(this).val() == questions[7].correctAnswer) {
+      game.correct++;
+    } else {
+      game.incorrect++;
+    }
+  });
+  $.each($("input[name='question-8']:checked"), function(){
+    if ($(this).val() == questions[8].correctAnswer) {
+      game.correct++;
+    } else {
+      game.incorrect++;
+    }
+  });
+  $.each($("input[name='question-9']:checked"), function(){
+    if ($(this).val() == questions[9].correctAnswer) {
+      game.correct++;
+    } else {
+      game.incorrect++;
+    }
+  });
+
 
     this.results();
   },
