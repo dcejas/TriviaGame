@@ -32,7 +32,7 @@ var questions = [{
     correctAnswer: "The Tesseract"
     }, {
     question: "6)	When Iron Man is struck by Thor’s lightning what happens?",
-    answers: ["t is deflected and strikes Captain America", "Tony Stark’s chest piece gives out and he goes into cardiac arrest. ", "It super charges his armor up to 400%", "His suit shuts down and he is trapped in his own armor."],
+    answers: ["It is deflected and strikes Captain America", "Tony Stark’s chest piece gives out and he goes into cardiac arrest. ", "It super charges his armor up to 400%", "His suit shuts down and he is trapped in his own armor."],
     correctAnswer: "It super charges his armor up to 400%"
     }, {
     question: "7)	When the Avengers are in the streets of New York Captain America starts issuing orders. What are his orders to the Hulk? ",
@@ -70,15 +70,18 @@ var game = {
 
   start: function() {
     timer = setInterval(game.countdown, 1000);
-    $('#subwrapper').prepend('<h2>Time Remaining: <span id="counter-number">120</span> Seconds</h2>');
+    $('#subwrapper').prepend('<h2>Time Remaining: <span id="counter-number">120</span> Seconds</h2></br>');
     $('#start').remove();
 
     for (var i = 0; i < questions.length; i++) {
       panel.append('<h2>' + questions[i].question + '</h2>');
+      panel.append('</hr>');
       for (var j = 0; j < questions[i].answers.length; j++){
-        panel.append('<input type="radio" name ="question' + '-' + i + '"value="' + questions[i].answers[j] + '">' + questions[i].answers[j]);
+        panel.append('<input type="radio" name ="question' + '-' + i + '"value="' + questions[i].answers[j] + '">' + " " + questions[i].answers[j]);
       }
-    }
+      panel.append('</br>');
+      panel.append('</br>');
+    };
     panel.append('<button id="done">Done</button>');
   },
   done: function(){
@@ -159,7 +162,6 @@ var game = {
     }
   });
 
-
     this.results();
   },
 
@@ -167,10 +169,10 @@ var game = {
       clearInterval(timer);
 
       $('#subwrapper h2').remove();
-    panel.html('<h2>All Done!</h2>');
-    panel.append('<h3>Correct Answers: ' + this.correct + '</h3>');
-    panel.append('<h3>Incorrect Answers: ' + this.incorrect + '</h3>');
-    panel.append('<h3>Unanswered: ' + (questions.length - (this.incorrect + this.correct)) + '</h3>');
+        panel.html('<h2>All Done!</h2>');
+        panel.append('<h3>Correct Answers: ' + this.correct + '</h3>');
+        panel.append('<h3>Incorrect Answers: ' + this.incorrect + '</h3>');
+        panel.append('<h3>Unanswered: ' + (questions.length - (this.incorrect + this.correct)) + '</h3>');
     }
   };
 ;

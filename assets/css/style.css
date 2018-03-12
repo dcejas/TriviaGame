@@ -10,54 +10,46 @@
 body {
     position: relative;
     background:#3267bdad;
-    /* background-image: url("../images/avengers_background_blue.jpg");
-    background-repeat:no-repeat;
-    background-size: 1450px; */
+
 }
 
 .container {
     margin-top: 30px;
-    /* background: rgba(174, 54, 49, 0.7); */
-    /* opacity: .5; */
     position: relative;
-    /* background-image: url("../images/avengers_background.jpg");
-    background-size: contain; */
-}
-hr {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
 }
 
 #title {
     color: #B03631;
     font-family: 'Avengeance', Arial, Helvetica, sans-serif; 
-    font-size: 80px;
+    font-size: 130px;
 }
 
-#startSplash {
-    background: red;
-    position: absolute;
-    height: 300px;
-    width: 97%;
-/* TEMPORARILY HIDING THIS DIV. THIS WILL BE HIDDEN USING JS LATER */
-    display: none;
-}
-
-.btn {
+#start {
     margin-top: 100px;
-    padding: 30px;
+    padding: 100px;
+    width: 500px;
+    font-size: 100px;
+    background: #B03631;
+    color: whitesmoke;
+    font-family: 'Avengeance', Arial, Helvetica, sans-serif; 
 }
 
-#questionnaire {
-    /* background: rgba(174, 54, 49, 0.7); */
-    margin-top: 20px;
-    height: 800px;
+#quiz-area {
+    font-size:200%;
 }
-input {
-    font-size: 50px;
+
+input[type=radio] {
+    margin-right: 10px;
+    margin-left: 20px;
+    transform: scale(3);
+}
+
+#done {
+    width: 100%;
+    height: 100px;
+    background: #B03631;
+    color: whitesmoke;
+    font-family: 'Avengeance', Arial, Helvetica, sans-serif; 
+    font-size: 60px;
+    padding-top: 20px;
 }
