@@ -8,9 +8,11 @@
 }
 
 body {
-    background-image: url("../images/avengers_background.jpg");
+    position: relative;
+    background:#3267bdad;
+    /* background-image: url("../images/avengers_background_blue.jpg");
     background-repeat:no-repeat;
-    background-size: cover;
+    background-size: 1450px; */
 }
 
 .container {
@@ -20,6 +22,15 @@ body {
     position: relative;
     /* background-image: url("../images/avengers_background.jpg");
     background-size: contain; */
+}
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
 }
 
 #title {
@@ -43,6 +54,10 @@ body {
 }
 
 #questionnaire {
-    background: rgba(174, 54, 49, 0.7);
+    /* background: rgba(174, 54, 49, 0.7); */
     margin-top: 20px;
+    height: 800px;
+}
+input {
+    font-size: 50px;
 }
